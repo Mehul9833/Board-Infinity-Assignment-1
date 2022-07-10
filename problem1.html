@@ -33,7 +33,7 @@
 			if (n === 0 || n === 1) {
 				handleOutputHtml(n, answer);
 			} else {
-				for (const i = n; i >= 1; i--) {
+				for (let i = n; i >= 1; i--) {
 					answer = answer * i;
 				}
 				handleOutputHtml(n, answer);
