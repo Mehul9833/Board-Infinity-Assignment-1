@@ -45,19 +45,13 @@
 						reversedNumberArr.push(checkNumber);
 					}
 				}
-				let sendArr = reversedNumberArr.sort(function (a, b) {
-					return a - b;
-				});
-				handleOutputHtml(number, sendArr);
+
+				handleOutputHtml(number, reversedNumberArr.length);
 			}
 		}
 		function handleOutputHtml(input, answer) {
-			span.innerHTML = `The Palindrome Numbers are  ${answer.map(
-				(item) => `${item}`
-			)}`;
-			console.log(
-				`The Palindrome Numbers are  ${answer.map((item) => `${item}`)}`
-			);
+			span.innerHTML = `The count of Palindrome Numbers is ${answer}`;
+			console.log(`The count of Palindrome Numbers is ${answer}`);
 		}
 
 		function reverseNumber(num) {
