@@ -34,7 +34,7 @@
 
 		function getSum() {
 			let string = prompt("Enter String With WhiteSpaces");
-			handleOutputHtml(string, string.trim());
+			handleOutputHtml(string, string.split(" ").join(""));
 		}
 		function handleOutputHtml(input, answer) {
 			span.innerHTML = `String Without WhiteSpaces: ${answer}`;
