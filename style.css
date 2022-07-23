@@ -23,6 +23,10 @@ body {
 	border-radius: 1rem;
 }
 
+.container .btn {
+	text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -38,17 +42,29 @@ span {
 	margin: 1rem 0;
 }
 
-.btn,
 .btn {
 	background-color: var(--primary-color);
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 15px 40px;
-	display: inline-block;
+	min-width: 150px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 100px;
 	position: relative;
 	color: var(--text-white);
 	margin: 10px 5px;
 	border: none;
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 90%;
+	}
+
+	.btn {
+		width: 100%;
+	}
 }
