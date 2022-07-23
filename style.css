@@ -38,8 +38,8 @@ span {
 	margin: 1rem 0;
 }
 
-.btn:link,
-.btn:visited {
+.btn,
+.btn {
 	background-color: var(--primary-color);
 	text-transform: uppercase;
 	text-decoration: none;
@@ -49,4 +49,6 @@ span {
 	position: relative;
 	color: var(--text-white);
 	margin: 10px 5px;
+	border: none;
+	cursor: pointer;
 }
